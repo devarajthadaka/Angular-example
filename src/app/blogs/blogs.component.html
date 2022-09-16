@@ -1,0 +1,23 @@
+<div class="container">
+    <h3>blogs</h3>
+    <div class="row">
+        <div class="col-sm-8">
+            <table class="table table-condensed" style="max-height: 300px; overflow-y: auto;">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>createdAt</th>
+                        <th>title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let blog of blogs.blogs">
+                        <td>{{blog._id}}</td>
+                        <td>{{blog.createdAt}}</td>
+                        <td>{{blog.title}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

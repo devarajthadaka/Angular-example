@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <table class="tbale table-bordered" style="width:100%;overflow:auto">
+                <thead>
+                    <tr>
+                       <th>Author</th>
+                       <th>Contenct</th>
+                       <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let query of query2.articles">
+                        <td>{{query.author}}</td>
+                        <td>{{query.content}}</td>
+                        <td>{{query.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

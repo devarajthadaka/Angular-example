@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Audits</h3>
+    <div class="row">
+        <div class="col-sm-8">
+            <table class="table table-boarderd" style="max-height: 350px;">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>serverIp</th>
+                        <th>clientIp</th>
+                        <th>statusCode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let audit of audits.audits">
+                        <td>{{audit._id }}</td>
+                        <td>{{audit.serverIp}}</td>
+                        <td>{{audit.clientIp}}</td>
+                        <td>{{audit.statusCode}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
